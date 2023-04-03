@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="11"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+<androidx.recyclerview.widget.RecyclerView
+    android:background="@drawable/tron"
+    android:paddingTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="10"
+    android:id="@+id/rcchat"/>
+<LinearLayout
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:weightSum="11"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+
+    android:id="@+id/line1">
+    <EditText
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/tron"
+        android:paddingLeft="15dp"
+        android:layout_weight="9"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:hint="Nhập nội dung chat"
+        android:id="@+id/edtInputTex"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:src="@drawable/ic_baseline_send_24"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgchat"/>
+</LinearLayout>
+</LinearLayout>

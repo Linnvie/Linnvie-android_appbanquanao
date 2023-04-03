@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/logo"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    tools:context=".Clothing">
+
+
+
+    <Button
+        android:background="@drawable/name_clothing"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLOTHING STORE"
+        android:textSize="30sp"
+        android:textColor="#ec8094"/>
+
+    <TextView
+        android:textSize="30sp"
+        android:textColor="#f7ae51 "
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"/>
+
+    <Button
+
+        android:textColor="#fff"
+        android:background="@drawable/custom_btn"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập" />
+
+    <Button
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_btn"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:text="Đăng ký"/>
+
+</LinearLayout>

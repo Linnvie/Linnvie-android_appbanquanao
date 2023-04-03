@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "710193310484",
+    "project_id": "login-b5156",
+    "storage_bucket": "login-b5156.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710193310484:android:033974eb70c4a8b1d13001",
+        "android_client_info": {
+          "package_name": "com.ntq.appbanhang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710193310484-8bcbdj5v9vmom9dfh5mf9sb1b1neogdu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ntq.appbanhang",
+            "certificate_hash": "34e700eef87d94fc4dfba612ef91460e4120da02"
+          }
+        },
+        {
+          "client_id": "710193310484-g8geccfiu2skadd5vl1q6k1vt1af1lon.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1Fz1KmtsVuzLtoIuFwrsGQfMJX6buNLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710193310484-g8geccfiu2skadd5vl1q6k1vt1af1lon.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

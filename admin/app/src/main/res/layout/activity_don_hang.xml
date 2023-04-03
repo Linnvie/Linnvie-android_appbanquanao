@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".DonHangActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/backDon"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:fitsSystemWindows="true"
+        app:title="Thanh toán"
+        android:background="#F59A23"
+        app:titleTextColor="@color/white"
+        android:textStyle="bold" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="Thông tin giao hàng:"/>
+
+    <EditText
+        android:id="@+id/inputDiaChi"
+        android:textAppearance="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textSize="14sp"
+        android:drawablePadding="10dp"
+        android:hint="Nhập địa chỉ giao hàng"
+        android:drawableLeft="@drawable/ic_baseline_add_location_24"
+        android:text="12, Nguyễn Đình Chiểu, phường Đa Kao, quận 1, tp Hồ Chí Minh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/inputsdt"
+                        android:textAppearance="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:textSize="14sp"
+                        android:drawablePadding="10dp"
+                        android:hint="Nhập số điện thoại nhận hàng"
+                        android:drawableLeft="@drawable/ic_baseline_call_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0976854321"/>
+                </LinearLayout>
+
+            <EditText
+                android:id="@+id/inputGhiChu"
+                android:paddingVertical="5dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textSize="12sp"
+                android:background="@drawable/tron"
+                android:hint="Thêm ghi chú khi giao hàng"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginLeft="10dp">-->
+<!--        <LinearLayout-->
+<!--            android:padding="10dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Đơn vị vận chuyển"/>-->
+<!--            <Spinner-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginLeft="10dp">-->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/recycleDonHang"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="280dp"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="Chi tiết đơn hàng"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/recycledonxacnhan"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tongTienHang"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="Tổng tiền hàng:             400.000vnd"/>
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="Tổng tiền vận chuyển:      30.000vnd"/>
+            <TextView
+                android:id="@+id/tongtiendon"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:text="Tổng thanh toán:             430.000vnd"/>
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="Nhấn 'Đặt hàng' đồng nghĩa với việc bạn đồng ý tuân theo Điều khoản của Shop"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+        <LinearLayout
+            android:padding="10dp"
+            android:weightSum="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng thanh toán:"
+                    android:textSize="16sp"
+                    android:textColor="#FF9800"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tongTienDon"
+                    android:textAlignment="textEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="430.000vnd"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingRight="20dp"/>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnDatHang"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_them"
+                android:text="Đặt hàng"/>
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btnHuyDatHang"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/tron"
+                android:backgroundTint="#ECE8E8"
+                android:text="Hủy"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

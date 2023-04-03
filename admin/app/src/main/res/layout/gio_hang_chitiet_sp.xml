@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imvHinh"
+            android:src="@drawable/item4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+        <TextView
+            android:id="@+id/txtGiaCTSPGioHang"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ec8094"
+            android:text="Giá:"/>
+        <TextView
+            android:id="@+id/kho"
+            android:layout_marginLeft="-90dp"
+            android:layout_marginTop="180dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kho:"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eaeaea" />
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Màu sắc"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imvmau1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="20dp"/>
+
+
+        <ImageView
+            android:id="@+id/imvmau2"
+            android:layout_marginLeft="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/imvmau3"
+            android:layout_marginLeft="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/imvmau4"
+            android:layout_marginLeft="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtMauDcChon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eaeaea"
+        android:layout_marginTop="4dp"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kích cỡ"/>
+    <Button
+
+        android:background="#d4d4d4"
+        android:id="@+id/size"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ec8094"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Freesize"/>
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng"/>
+        <LinearLayout
+            android:paddingLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:textColor="#7d7d7d "
+                android:id="@+id/btnDecrease"
+                android:textSize="20sp"
+                android:background="@drawable/custormbtn_buy_product"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <Button
+                android:textColor="#7d7d7d "
+                android:textSize="20sp"
+                android:id="@+id/numberProduct"
+                android:background="@drawable/custormbtn_buy_product"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+            <Button
+                android:textColor="#7d7d7d "
+                android:id="@+id/btnIncrease"
+                android:textSize="20sp"
+                android:background="@drawable/custormbtn_buy_product"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm vào giỏ hàng"/>
+
+</LinearLayout>

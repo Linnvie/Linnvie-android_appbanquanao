@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GioHangActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/backGio"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:fitsSystemWindows="true"
+        app:title="Giỏ hàng"
+        android:background="#F59A23"
+        app:titleTextColor="@color/white"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="Vui lòng tích chọn sản phẩm muốn mua"/>
+            <LinearLayout
+                android:layout_weight="9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/gioTrong"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textSize="30sp"
+                        android:text="Giỏ hàng đang trống"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/listGioHang"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </FrameLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="6"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/txtTien"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng tiền: 180.000.000"/>
+                <Button
+                    android:textSize="12sp"
+                    android:id="@+id/btnTaoDon"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:text="Đặt hàng"
+                    android:backgroundTint="#F59A23"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

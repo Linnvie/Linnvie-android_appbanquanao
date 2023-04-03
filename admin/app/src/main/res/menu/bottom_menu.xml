@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navBotHome"
+        android:title="Home"
+        android:icon="@drawable/logout_icon"/>
+    <item android:id="@+id/navBotDonHang"
+        android:title="Đơn hàng"
+        android:icon="@drawable/logout_icon"/>
+    <item android:id="@+id/navBotToi"
+        android:title="Tôi"
+        android:icon="@drawable/logout_icon"/>
+
+</menu>
